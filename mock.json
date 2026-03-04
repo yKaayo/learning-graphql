@@ -1,0 +1,112 @@
+{
+  "users": [
+    { "id": "1", "name": "Ana Souza", "email": "ana@email.com", "age": 28 },
+    { "id": "2", "name": "Bruno Lima", "email": "bruno@email.com", "age": 34 },
+    { "id": "3", "name": "Carla Mendes", "email": "carla@email.com", "age": 22 }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Aprendendo GraphQL do zero",
+      "body": "GraphQL é uma linguagem de consulta incrível criada pelo Facebook.",
+      "authorId": "1",
+      "createdAt": "2024-01-10"
+    },
+    {
+      "id": "2",
+      "title": "Dicas de TypeScript para iniciantes",
+      "body": "TypeScript adiciona tipagem estática ao JavaScript, tornando o código mais seguro.",
+      "authorId": "1",
+      "createdAt": "2024-02-15"
+    },
+    {
+      "id": "3",
+      "title": "Por que usar Apollo Server?",
+      "body": "Apollo Server facilita a criação de APIs GraphQL robustas e escaláveis.",
+      "authorId": "2",
+      "createdAt": "2024-03-01"
+    },
+    {
+      "id": "4",
+      "title": "REST vs GraphQL: qual escolher?",
+      "body": "Cada abordagem tem seus pontos fortes. Veja quando usar cada uma.",
+      "authorId": "2",
+      "createdAt": "2024-03-20"
+    },
+    {
+      "id": "5",
+      "title": "Minha experiência com Node.js",
+      "body": "Node.js transformou minha forma de construir backends modernos.",
+      "authorId": "3",
+      "createdAt": "2024-04-05"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "Ótimo artigo, me ajudou muito!",
+      "postId": "1",
+      "authorId": "2"
+    },
+    {
+      "id": "2",
+      "text": "Concordo, GraphQL é fantástico!",
+      "postId": "1",
+      "authorId": "3"
+    },
+    {
+      "id": "3",
+      "text": "Você poderia falar mais sobre fragments?",
+      "postId": "1",
+      "authorId": "2"
+    },
+    {
+      "id": "4",
+      "text": "TypeScript mudou minha vida!",
+      "postId": "2",
+      "authorId": "3"
+    },
+    {
+      "id": "5",
+      "text": "Muito bom! Aguardando mais posts assim.",
+      "postId": "2",
+      "authorId": "2"
+    },
+    {
+      "id": "6",
+      "text": "Apollo é realmente incrível para times.",
+      "postId": "3",
+      "authorId": "1"
+    },
+    {
+      "id": "7",
+      "text": "Prefiro o Yoga Server, mas cada um...",
+      "postId": "3",
+      "authorId": "3"
+    },
+    {
+      "id": "8",
+      "text": "Artigo muito equilibrado e justo!",
+      "postId": "4",
+      "authorId": "1"
+    },
+    {
+      "id": "9",
+      "text": "No meu projeto uso GraphQL e amei.",
+      "postId": "4",
+      "authorId": "3"
+    },
+    {
+      "id": "10",
+      "text": "Node.js + Express é uma combinação top.",
+      "postId": "5",
+      "authorId": "1"
+    },
+    {
+      "id": "11",
+      "text": "Comecei com Node esse ano, adorei!",
+      "postId": "5",
+      "authorId": "2"
+    }
+  ]
+}

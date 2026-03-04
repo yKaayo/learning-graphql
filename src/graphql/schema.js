@@ -1,31 +1,16 @@
 import { createSchema } from "graphql-yoga";
 
-export const schema = createSchema({
-  typeDefs: /* GraphQL */ `
-    type Query {
-      user: User!
-      users: [User!]!
-    }
+// Schemas
+import { userTypeDefs } from "./features/user/typedefs";
+import { postTypeDefs } from "./features/post/typedefs";
+import { commentTypeDefs } from "./features/comment/typedefs";
 
-    type User {
-      id: ID
-      name: String
-      array: [String]
-    }
-  `,
-  resolvers: {
-    Query: {
-      user: () => {
-        return {
-          id: 1,
-          name: "Kaayo",
-          array: ["A", "B"],
-        };
-      },
-      users: () => [
-        { id: 1, name: "Kaayo", array: ["A", "B"] },
-        { id: 2, name: "Caio", array: ["A", "B"] },
-      ],
-    },
-  },
+// Resolvers
+import { userResolvers } from "./features/user/resolver";
+import { postResolvers } from "./features/post/resolver";
+import { commentResolvers } from "./features/comment/resolver";
+
+export const schema = createSchema({
+  typeDefs: [userTypeDefs, postTypeDefs, commentTypeDefs],
+  resolvers: [userResolvers, postResolvers, commentResolvers],
 });

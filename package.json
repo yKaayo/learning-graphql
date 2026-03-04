@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.js"
+    "dev": "tsx watch src/index.js",
+    "server": "npx json-server --watch mock.json"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,11 @@
   "homepage": "https://github.com/yKaayo/learning-graphql#readme",
   "dependencies": {
     "graphql": "^16.13.0",
+    "graphql-tag": "^2.12.6",
     "graphql-yoga": "^5.18.0"
   },
   "devDependencies": {
+    "json-server": "1.0.0-beta.12",
     "tsx": "^4.21.0"
   }
 }
